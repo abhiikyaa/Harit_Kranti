@@ -1,253 +1,69 @@
-﻿# Harit_Kranti
- # Harit_Kranti
+# Portfolio
 
-> An agricultural application for pest identification and management using Express and React.
+> A lightweight static web portfolio built around an index HTML file.
 
-![GitHub stars](https://img.shields.io/github/stars/abhiikyaa/Harit_Kranti?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/abhiikyaa/Harit_Kranti?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/abhiikyaa/Harit_Kranti?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/abhiikyaa/Harit_Kranti?style=for-the-badge&logo=github) ![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/abhiikyaa/Portfolio?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/abhiikyaa/Portfolio?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/abhiikyaa/Portfolio?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/abhiikyaa/Portfolio?style=for-the-badge&logo=github)
 
 ## 📑 Table of Contents
 
 - [Description](#description)
 - [Key Features](#key-features)
 - [Use Cases](#use-cases)
-- [Tech Stack](#tech-stack)
 - [Quick Start](#quick-start)
-- [Key Dependencies](#key-dependencies)
-- [Available Scripts](#available-scripts)
 - [Project Structure](#project-structure)
-- [Development Setup](#development-setup)
+- [Contributors](#contributors)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## 📝 Description
 
-Harit_Kranti is a full-stack agricultural management application designed to assist users in identifying and documenting crop pests. Built with a decoupled architecture, the project provides a unified system to handle user accounts, agricultural data, and pest records, addressing the need for streamlined digital tools in farming and crop monitoring.
+Portfolio is a minimal web project designed to serve as a personal showcase or landing page. Centered around a single entry point, it provides a clean baseline for presenting personal projects, skills, and background information on the web.
+
+The project utilizes a simple static file architecture headed by an index.html file. This straightforward structure allows for easy customization and instant deployment across any static web hosting provider without requiring complex build pipelines or framework overhead.
 
 ## ✨ Key Features
 
-- **🐛 Pest Tracking API** — Exposes dedicated routes under `/api/pest` to handle agricultural pest queries and data management.
-- **👥 User Management Services** — Provides secure backend endpoints for user profiles and authentication management via `/api/users`.
-- **📷 Multipart Image Uploads** — Processes crop or pest images uploaded by users using Multer middleware on the Express backend.
-- **📁 Static Upload Serving** — Configures an Express static folder to serve uploaded agricultural images directly from the local file system.
-- **🎨 React and Tailwind Frontend** — Provides a responsive client-side interface built with Vite, React, TypeScript, and styled using Tailwind CSS.
-- **🗄️ Mongoose Database Integration** — Utilizes Mongoose schemas to interface with a MongoDB database for persisting pest data and user credentials.
+- **📄 Static Entry Point** — Uses an index.html file as the foundational entry point for displaying portfolio content.
+- **🌐 Universal Web Compatibility** — Delivers static web content that can be served directly by any web server or static CDN.
+- **⚡ Lightweight Project Footprint** — Maintains a minimal structure free of heavy dependencies or build tool requirements.
 
 ## 🎯 Use Cases
 
-- Deploying a crop health monitoring application where users can upload pest photos for database logging.
-- Setting up a community agricultural platform for tracking local pest outbreaks and managing farmer profiles.
-- Using a pre-configured Express and React TypeScript boilerplate tailored for agricultural data collection.
-
-## 🛠️ Tech Stack
-
-- 🥟 **Bun**
-- 🚀 **Express.js**
-- 🍃 **MongoDB**
-- ⚛️ **React**
-- 🌬️ **Tailwind CSS**
-- 📘 **TypeScript**
-- ⚡ **Vite**
-
-**Notable libraries:** Mongoose, Multer
+- Publishing a basic personal portfolio or resume on the web.
+- Serving as a simple starting template for static landing pages.
 
 ## ⚡ Quick Start
 
 ```bash
 
 # 1. Clone the repository
-git clone https://github.com/abhiikyaa/Harit_Kranti.git
+git clone https://github.com/abhiikyaa/Portfolio.git
 
-# 2. Install dependencies
-bun install
-
-# 3. Start the dev server
-npm run dev
+# See the Development Setup section below
 ```
-
-## 📦 Key Dependencies
-
-```
-@types/jsonwebtoken: ^9.0.10
-axios: ^1.12.2
-bcryptjs: ^3.0.2
-cors: ^2.8.5
-dotenv: ^17.2.2
-express: ^5.1.0
-jsonwebtoken: ^9.0.2
-mongoose: ^8.18.1
-morgan: ^1.10.1
-multer: ^2.0.2
-react: ^19.1.1
-react-dom: ^19.1.1
-```
-
-## 🚀 Available Scripts
-
-- **THIS_MAKEFILE_PATH** — `make THIS_MAKEFILE_PATH`
-- **THIS_DIR** — `make THIS_DIR`
-- **install** — `make install`
-- **node_modules** — `make node_modules`
-- **lint** — `make lint`
-- **test-node** — `make test-node`
-- **test-browser** — `make test-browser`
-- **test** — `make test`
-- **coveralls** — `make coveralls`
 
 ## 📁 Project Structure
 
 ```
 .
-├── backend
-│   ├── package.json
-│   ├── src
-│   │   ├── app.ts
-│   │   ├── config
-│   │   │   └── db.ts
-│   │   ├── controllers
-│   │   │   ├── pestController.ts
-│   │   │   └── userController.ts
-│   │   ├── middleware
-│   │   │   └── errorHandler.ts
-│   │   ├── models
-│   │   │   ├── User.ts
-│   │   │   ├── pestResult.ts
-│   │   │   └── pest_model.h5
-│   │   ├── routes
-│   │   │   ├── pest.js
-│   │   │   ├── pestRoutes.ts
-│   │   │   └── userRoutes.ts
-│   │   ├── server.ts
-│   │   ├── services
-│   │   │   ├── geminiClient.js
-│   │   │   ├── geminiService.ts
-│   │   │   ├── mlModel.js
-│   │   │   ├── pestService.ts
-│   │   │   └── supabaseClient.js
-│   │   ├── types
-│   │   │   └── globals.d.ts
-│   │   └── utils
-│   │       └── upload.ts
-│   └── tsconfig.json
-├── harit-path-main
-│   ├── components.json
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── public
-│   │   ├── favicon.ico
-│   │   ├── placeholder.svg
-│   │   └── robots.txt
-│   ├── src
-│   │   ├── App.css
-│   │   ├── App.tsx
-│   │   ├── assets
-│   │   │   ├── WhatsApp Image 2025-09-18 at 18.48.58_de418c34.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.18.06_46c59b7e.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.18.06_e2b3ccdc.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.18.06_ffb4111e.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.18.07_2a030f59.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.18.07_c217dfff.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 06.38.03_614cb0be.jpg
-│   │   │   ├── WhatsApp Image 2025-09-19 at 07.00.01_50543af8.jpg
-│   │   │   ├── crops-hero.jpg
-│   │   │   └── weather-icons.jpg
-│   │   ├── components
-│   │   │   ├── ChatAssistant.tsx
-│   │   │   ├── Community.tsx
-│   │   │   ├── Dashboard.tsx
-│   │   │   ├── FarmCalendar.tsx
-│   │   │   ├── MarketPrices.tsx
-│   │   │   ├── OnboardingScreen.tsx
-│   │   │   ├── PestDetection.tsx
-│   │   │   ├── VoiceButton.tsx
-│   │   │   ├── VoiceLanguageContext.tsx
-│   │   │   ├── WeatherDetails.tsx
-│   │   │   └── ui
-│   │   │       ├── accordion.tsx
-│   │   │       ├── alert-dialog.tsx
-│   │   │       ├── alert.tsx
-│   │   │       ├── aspect-ratio.tsx
-│   │   │       ├── avatar.tsx
-│   │   │       ├── badge.tsx
-│   │   │       ├── breadcrumb.tsx
-│   │   │       ├── button.tsx
-│   │   │       ├── calendar.tsx
-│   │   │       ├── card.tsx
-│   │   │       ├── carousel.tsx
-│   │   │       ├── chart.tsx
-│   │   │       ├── checkbox.tsx
-│   │   │       ├── collapsible.tsx
-│   │   │       ├── command.tsx
-│   │   │       ├── context-menu.tsx
-│   │   │       ├── dialog.tsx
-│   │   │       ├── drawer.tsx
-│   │   │       ├── dropdown-menu.tsx
-│   │   │       ├── form.tsx
-│   │   │       ├── hover-card.tsx
-│   │   │       ├── input-otp.tsx
-│   │   │       ├── input.tsx
-│   │   │       ├── label.tsx
-│   │   │       ├── menubar.tsx
-│   │   │       ├── navigation-menu.tsx
-│   │   │       ├── pagination.tsx
-│   │   │       ├── popover.tsx
-│   │   │       ├── progress.tsx
-│   │   │       ├── radio-group.tsx
-│   │   │       ├── resizable.tsx
-│   │   │       ├── scroll-area.tsx
-│   │   │       ├── select.tsx
-│   │   │       ├── separator.tsx
-│   │   │       ├── sheet.tsx
-│   │   │       ├── sidebar.tsx
-│   │   │       ├── skeleton.tsx
-│   │   │       ├── slider.tsx
-│   │   │       ├── sonner.tsx
-│   │   │       ├── switch.tsx
-│   │   │       ├── table.tsx
-│   │   │       ├── tabs.tsx
-│   │   │       ├── textarea.tsx
-│   │   │       ├── toast.tsx
-│   │   │       ├── toaster.tsx
-│   │   │       ├── toggle-group.tsx
-│   │   │       ├── toggle.tsx
-│   │   │       ├── tooltip.tsx
-│   │   │       └── use-toast.ts
-│   │   ├── hooks
-│   │   │   ├── use-mobile.tsx
-│   │   │   ├── use-toast.ts
-│   │   │   └── useSpeech.ts
-│   │   ├── index.css
-│   │   ├── lib
-│   │   │   └── utils.ts
-│   │   ├── main.tsx
-│   │   ├── pages
-│   │   │   ├── Index.tsx
-│   │   │   └── NotFound.tsx
-│   │   ├── types
-│   │   │   └── screens.ts
-│   │   └── vite-env.d.ts
-│   ├── tailwind.config.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.json
-│   ├── tsconfig.node.json
-│   └── vite.config.ts
-└── package.json
+└── index.html
 ```
 
-## 🛠️ Development Setup
+## 👥 Contributors
 
-### Node.js / JavaScript
-1. Install Node.js (v18+ recommended)
-2. Install dependencies: `npm install` (or `yarn` / `pnpm install` / `bun install`)
-3. Start the dev server: see the **Quick Start** above
+Thanks to everyone who has contributed to this project:
+
+<p align="left">
+<a href="https://github.com/abhiikyaa" title="abhiikyaa"><img src="https://avatars.githubusercontent.com/u/223725369?v=4&s=64" width="64" height="64" alt="abhiikyaa" style="border-radius:50%" /></a>
+</p>
+
+[See the full list of contributors →](https://github.com/abhiikyaa/Portfolio/graphs/contributors)
 
 ## 👥 Contributing
 
 Contributions are welcome! Here's the standard flow:
 
 1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/abhiikyaa/Harit_Kranti.git`
+2. **Clone** your fork: `git clone https://github.com/abhiikyaa/Portfolio.git`
 3. **Branch**: `git checkout -b feature/your-feature`
 4. **Commit**: `git commit -m 'feat: add some feature'`
 5. **Push**: `git push origin feature/your-feature`
@@ -255,10 +71,12 @@ Contributions are welcome! Here's the standard flow:
 
 Please follow the existing code style and include tests for new behavior where applicable.
 
-## 📜 License
-
-This project is licensed under the **MIT** License.
-
 ---
-*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
 
+<div align="center">
+
+[![Made with ReadmeBuddy](https://img.shields.io/badge/Made%20with-ReadmeBuddy-8B5CFF?style=for-the-badge&logo=markdown&logoColor=white)](https://readmebuddy.com)
+
+<sub>Generate beautiful READMEs in seconds → <a href="https://readmebuddy.com">readmebuddy.com</a></sub>
+
+</div>
